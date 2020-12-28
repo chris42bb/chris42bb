@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if(item["direction"] === "credit") {
         balances[item["currency"]] += item["amount"];
       } else if(item["direction"] === "debit") {
-        balances[item["currency"]] += item["amount"];
+        balances[item["currency"]] -= item["amount"];
       }
     }
   
